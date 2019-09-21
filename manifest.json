@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "2FiddyFiddy",
+    "description": "Everybody has one of those days where you dont feel very happy, but you know what makes EVERYONE happy? Food and dogs, with this application you will get just that!",
+    "version": "1",
+    "author": "Cristian Cuevas",
+    "default_icon": {
+        "16": "happy16.jpg",
+        "64": "happy64.jpg"
+    },
+
+
+    "browser_action": {
+
+
+
+        "default_title": "Happiness!"
+
+
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": ["activeTab"],
+
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval' jquery.min.js; object-src 'self'"
+}
