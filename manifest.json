@@ -4,18 +4,16 @@
     "description": "Everybody has one of those days where you dont feel very happy, but you know what makes EVERYONE happy? Food and dogs, with this application you will get just that!",
     "version": "1",
     "author": "Cristian Cuevas",
-    "default_icon": {
-        "16": "happy16.jpg",
-        "64": "happy64.jpg",
-        "128": "happy128.jpg"
-    },
+
+    "default_icon": "happy16.jpg",
 
 
     "browser_action": {
 
 
 
-        "default_title": "Happiness!"
+        "default_title": "Happiness!",
+        "default_icon": "happy64.jpg"
 
 
     },
