@@ -1,27 +1,27 @@
 {
     "manifest_version": 2,
     "name": "2FiddyFiddy",
-    "description": "Everybody has one of those days where you dont feel very happy, but you know what makes EVERYONE happy? Food and dogs, with this application you will get just that!",
+    "description": "Everybody has one of those days where you dont feel very happy, but you know what makes EVERYONE happy? kitties and puppies, with this extension you will get just that when you open a new tab",
     "version": "1",
     "author": "Cristian Cuevas",
-
-    "default_icon": "happy16.jpg",
 
 
     "browser_action": {
 
-
-
-        "default_title": "Happiness!",
-        "default_icon": "happy64.jpg"
-
-
+        "default_title": "2 Fiddy/Fiddy!",
+        "default_icon": {
+            "32": "favicon.png",
+            "16": "happy16.png",
+            "64": "happy64.png",
+            "128": "happy128.png"
+        }
     },
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab"]
 
 
-    "content_security_policy": "script-src 'self' 'unsafe-eval' jquery.min.js; object-src 'self'"
+
+
 }
