@@ -39,7 +39,7 @@ $.getJSON(APICall, function (data) {
     var image = val
     var imageURL = val.urls.regular
 
-    const card = document.createElement('div')
+    const card = document.getElementById('pictures')
     card.setAttribute('class', 'box')
 
 
@@ -66,27 +66,6 @@ $.getJSON(APICall, function (data) {
 
 
 
-var APIKey = 'ecdfe49f601550468d93e457f818f6d04e1bf34dd15a9c725bc16e574f579e71';
-
-$.getJSON('https://api.unsplash.com/search/photos?query=chicago&per_page=50&client_id=ecdfe49f601550468d93e457f818f6d04e1bf34dd15a9c725bc16e574f579e71', function (data) {
-  console.log(data);
-
-
-  var imageList = data.results;
-
-  $.each(imageList, function (i, val) {
-
-    var image = val;
-    var imageURL = val.urls.regular;
-    var imageWidth = val.width;
-    var imageHeight = val.height;
-
-    if (imageWidth > imageHeight) {
-      $('.grid').append('<div class="image"><img src="' + imageURL + '"></div>');
-    }
-
-  });
-});
 
 
 

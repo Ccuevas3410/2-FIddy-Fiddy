@@ -1,16 +1,16 @@
 {
     "manifest_version": 2,
-    "name": "2FiddyFiddy",
-    "description": "Everybody has one of those days where you dont feel very happy, but you know what makes EVERYONE happy? kitties and puppies, with this extension you will get just that when you open a new tab",
-    "version": "1",
-    "author": "Cristian Cuevas",
+    "name": "Happy Tab!",
 
+    "version": "2",
+    "author": "Cristian Cuevas",
+    "description": "Every one bad days, some more than others, but you know what we all share the same feeling for? Puppies and Kitties.",
 
     "browser_action": {
 
-        "default_title": "2 Fiddy/Fiddy!",
+        "default_title": "Happy Tab!",
         "default_icon": {
-            "32": "favicon.png",
+
             "16": "happy16.png",
             "64": "happy64.png",
             "128": "happy128.png"
