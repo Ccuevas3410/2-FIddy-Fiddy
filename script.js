@@ -39,21 +39,25 @@ $.getJSON(APICall, function (data) {
     var image = val
     var imageURL = val.urls.regular
 
-    const card = document.getElementById('pictures')
-    card.setAttribute('class', 'box')
 
 
+    
 
+
+    var div = document.createElement('div')
+    div.setAttribute('class','box')
+    div.setAttribute('id',"pictures")
 
     var img = document.createElement('img')
     img.src = imageURL
     img.setAttribute('class', 'center')
 
     // Append the cards to the container element
+    
 
-
-    container.appendChild(card)
-    card.appendChild(img)
+     container.appendChild(div)
+     div.appendChild(img)
+     
 
 
 
@@ -64,6 +68,14 @@ $.getJSON(APICall, function (data) {
 
 });
 
+var test = document.getElementById('container').firstChild;
+test.onload = function() {
+    if(test.height > img.width) {
+        test.height = '100%';
+        test.width = 'auto';
+    }
+};
+
 
 
 
@@ -71,4 +83,6 @@ $.getJSON(APICall, function (data) {
 
 
 //TODO : 
-// FIX THE SCRIPT LOADING OF JQUERY
+// BEAUTIFY THE GALLERY
+
+//SOLVED THE CREATION OF THE BOX DIVS BY JS

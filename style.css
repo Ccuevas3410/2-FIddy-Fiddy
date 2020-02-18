@@ -28,7 +28,22 @@ body {
 
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
+/* Create two equal columns that sits next to each other */
+.box {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.box img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 
 @media(max-width:1200px) {
 
