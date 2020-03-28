@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: #333;
+  height: 100%;
+  margin-bottom: 10px;
 }
 
 
@@ -11,6 +13,7 @@ body {
   margin: 20px auto;
   columns: 4;
   column-gap: 40px;
+  height: 100%;
 
 }
 
@@ -22,27 +25,17 @@ body {
   overflow: hidden;
   background: #333;
   break-inside: avoid;
-
-
-
+  height: 100%;
 
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.box {
-  flex: 50%;
-  padding: 0 4px;
-}
 
 .box img {
   margin-top: 8px;
   vertical-align: middle;
+
+  display: flex;
+    
 }
 
 @media(max-width:1200px) {
@@ -79,4 +72,54 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 48%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+footer p {
+  margin: 0;
+  padding: 2.2rem;
+}
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.middle {
+
+  text-align: center;
+  margin: auto
 }
