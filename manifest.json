@@ -11,9 +11,9 @@
         "default_title": "Happy Tab!",
         "default_icon": {
 
-            "16": "happy16.png",
-            "64": "happy64.png",
-            "128": "happy128.png"
+            "16": "imgs/happy16.png",
+            "64": "imgs/happy64.png",
+            "128": "imgs/happy128.png"
         }
     },
     "chrome_url_overrides": {
